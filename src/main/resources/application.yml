@@ -11,5 +11,17 @@ eureka:
 spring:
   application:
     name: ms-football-team
+  datasource:
+    username: hans
+    password: hans2023
+    platform: postgres
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+
   main:
     webApplicationType: reactive
