@@ -9,6 +9,7 @@ public class FootballTeam {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
 
     private String description;
@@ -44,4 +45,5 @@ public class FootballTeam {
     public void setDescription(String description) {
         this.description = description;
     }
+
 }
